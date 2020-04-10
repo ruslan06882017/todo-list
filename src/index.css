@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todo-item-main{
+  padding:10px;
+  width: 300px;
+  height:45px;
+  border: 1px solid #ccc;
+}
+
+.todo-item {
+  padding:10px;
+  width: 300px;
+  height:30px;
+  border: 1px solid #ccc;
+}
+
+.todoItemContainer {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+.todoItemContainer input {
+  margin: 0 5px;
+}
+.taskListContainer {
+  background-color: #ccc;
+  padding: 3px;
+}

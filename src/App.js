@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './components/todo-list';
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
         <form>
           <h1> Todo list Project </h1>
           <hr/>
-          <input type="text" className="todo-item"/>
+          <input type="text" placeholder="Add new task here" className="todo-item-main"/>
+          <TodoList/>
         </form>
     </div>
   );
