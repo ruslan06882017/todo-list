@@ -12,7 +12,23 @@ class TodoList extends React.Component {
         ]
     }
 
+    getTasks(){
+        //const tasksStorage = localStorage.getItem("id")
+        const dt = [
+            {id: 12, name: 'Here the name'},
+            {id: 54, name: 'Here the 2'},
+            {id: 74, name: 'Here the 333'}
+        ]
+        localStorage.setItem('tasks', JSON.stringify(dt));
+
+        const lists = JSON.parse(localStorage.getItem('tasks'));
+        lists.map((list) => {
+            console.log(list.name);
+        })
+    }
+
     render() {
+        this.getTasks();
         const taskList = this.state.Tasks;
         return (
           <div className="taskListContainer">
