@@ -38,3 +38,11 @@ code {
   background-color: #ccc;
   padding: 3px;
 }
+.taskListContainer div {
+  margin:0 auto;
+}
+.todo-item-btn {
+
+  height:67px;
+  border: 1px solid #ccc;
+}
